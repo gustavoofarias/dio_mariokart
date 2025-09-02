@@ -1,0 +1,55 @@
+# 🏎️ Mario Kart - Simulador em JavaScript
+
+## Descrição
+
+Este é um **simulador de corridas inspirado em Mario Kart**, desenvolvido em **JavaScript** para prática de lógica de programação e manipulação de objetos.  
+O jogo simula corridas entre personagens clássicos do universo Mario, combinando atributos como **velocidade**, **manobrabilidade** e **poder**, com o fator **sorte**, representado por um dado de 6 lados.
+
+Cada corrida possui **5 rodadas**, e a pista em cada rodada pode ser:
+
+- **Reta** → compara a **velocidade** dos personagens  
+- **Curva** → compara a **manobrabilidade**  
+- **Confronto** → compara o **poder**  
+
+O vencedor de cada rodada é determinado pelo **atributo correspondente + valor do dado**.
+
+---
+
+## Personagens
+
+Os personagens disponíveis no jogo são:
+
+| Personagem    | Velocidade | Manobrabilidade | Poder |
+|---------------|------------|----------------|-------|
+| Mario         | 4          | 3              | 3     |
+| Peach         | 3          | 4              | 2     |
+| Yoshi         | 4          | 4              | 2     |
+| Bowser        | 5          | 2              | 5     |
+| Luigi         | 3          | 4              | 4     |
+| Donkey Kong   | 2          | 2              | 5     |
+
+---
+
+## Estrutura do Código
+
+- **`class.js`** → define a classe `personagem` com os atributos: `nome`, `velocidade`, `manobrabilidade` e `poder`.  
+- **`index.js`** → lógica do jogo:
+  - Sorteio dos personagens  
+  - Sorteio das pistas  
+  - Rolagem do dado  
+  - Comparação dos atributos + dado  
+  - Impressão do resultado de cada rodada e do placar final  
+
+### Funções principais
+
+- `escolherPersonagem()` → sorteia aleatoriamente um personagem.  
+- `escolherAleatorio(array)` → escolhe aleatoriamente um item de um array.  
+- `rolarDado()` → retorna um número aleatório de 1 a 6.  
+
+---
+
+## Objetivo do Projeto
+
+- Praticar **JavaScript** com objetos, loops, funções e operadores condicionais.  
+- Aplicar conceitos de **aleatoriedade** com o dado.  
+- Desenvolver **lógica de jogo simples** e formatação de saída no terminal.
